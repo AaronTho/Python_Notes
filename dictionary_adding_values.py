@@ -5,5 +5,9 @@ teams = {
     'yankees': ['Judge', 'Stanton'],
 }
 
-best_team = teams['giants']
-print(teams['astros'][:-1])
+teams['red sox'] = ['Price', 'Betts']
+
+print(teams['red sox'])
+
+
+# Add new key value pairs
