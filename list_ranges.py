@@ -27,9 +27,6 @@ sale_prices = [
 
 sorted_list = sorted(sale_prices, reverse=True)
 
-butt_prices = sale_prices
-
-print(butt_prices)
 
 print(sorted_list)
 print(sale_prices)
