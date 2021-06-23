@@ -5,6 +5,7 @@ tags = ['python',
         'programming',
         'computer science'
         ]
+# [start:stop:interval]
 
 tag_range = tags[0:-1:2]
 tag_range_reversed = tags[::-1]
@@ -25,6 +26,10 @@ sale_prices = [
 ]
 
 sorted_list = sorted(sale_prices, reverse=True)
+
+butt_prices = sale_prices
+
+print(butt_prices)
 
 print(sorted_list)
 print(sale_prices)
