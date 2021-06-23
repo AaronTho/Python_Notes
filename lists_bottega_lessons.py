@@ -10,3 +10,8 @@ users.append('Ian')
 
 
 print(users[2])
+
+users[4] = 'Brayden'
+# Reassigns index 4.
+
+print(users)
