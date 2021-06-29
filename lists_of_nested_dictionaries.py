@@ -1,4 +1,5 @@
 teams = [
+    'My String',
     {
         'astros': {
             '2B': 'Altuve',
@@ -10,6 +11,7 @@ teams = [
         'angels': {
             'OF': 'Trout',
             'DH': 'Pujols',
+            'LFP': 'Romo',
         }
     }
 ]
@@ -18,4 +20,6 @@ teams = [
 
 angels = teams[1].get('angels', 'Team not found')
 
-print(list(angels.values())[1])
+# print(list(angels.values())[1])
+
+teams_index = teams.index('My String')
