@@ -20,6 +20,4 @@ teams = [
 
 angels = teams[1].get('angels', 'Team not found')
 
-# print(list(angels.values())[1])
-
-teams_index = teams.index('My String')
+print(list(angels.values())[1][1])
