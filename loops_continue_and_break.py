@@ -6,12 +6,12 @@ usernames = [
     'sansa',
 ]
 
-for username in usernames:
-    if username == 'cersei':
-        print(f'Sorry, {username}, you are not allowed')
-        continue
-    else:
-        print(f'{username} is allowed')
+# for username in usernames:
+#     if username == 'cersei':
+#         print(f'Sorry, {username}, you are not allowed')
+#         continue
+#     else:
+#         print(f'{username} is allowed')
 
 for username in usernames:
     if username == 'cersei':
