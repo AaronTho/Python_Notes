@@ -10,6 +10,8 @@
 #     i = i + 1
 # print('Done')
 
+# Sentinal value is the line that ends a while loop.
+
 nums = list(range(1, 100))
 
 while len(nums) > 0:
