@@ -3,10 +3,10 @@ def loop_over_list():
     result = []
 
     for number in numbers:
-        result += numbers
-        # numbers.append(result)
+        result.append(number + 1)
 
-    return result
+    print(result)
+    return(result)
 
 
 loop_over_list()
