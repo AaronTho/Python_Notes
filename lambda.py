@@ -15,4 +15,3 @@ def greeting(name): return f'Hi, {name}'
 
 
 print(greeting('Jordan'))
-# greeting(lambda_practice('Jordan'))
