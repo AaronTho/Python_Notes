@@ -29,5 +29,3 @@ titles = title_generator(links)
 
 for title in titles:
     print(title)
-
-# Commit to Git
