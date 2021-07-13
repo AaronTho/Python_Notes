@@ -11,7 +11,7 @@ if top_of_range.isdigit():
 else:
     print("Please type a number next time.")
     quit()
-random_number = random.randint(0, top_of_range)
+random_number = random.randint(1, top_of_range)
 guesses = 0
 while True:
     guesses += 1
@@ -27,6 +27,9 @@ while True:
         print("Chicken Dinner!")
         break
     else:
-        print("This is profoundly wrong.")
+        if user_guess > random_number:
+            print("Too high, hippie! Guess lower.")
+        else:
+            print("Too low, get your head out of the gutter, and guess higher")
 
 print("Look at the big brain on Brad. You got it in", guesses, "guesses.")
