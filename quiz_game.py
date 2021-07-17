@@ -38,6 +38,6 @@ if answer.lower() == 'latter day saint':
     print('Correct!')
     score += 1
 else:
-    print('Sorry, but you are very dumb. Our data suggests your mother smoked a lot.')
+    print('Sorry, but you are very dumb. Our data suggests your mother smoked and was indifferent to you.')
 
-print("You got " + str((score / 4) * 100) + "%")
+print("You got " + str((score / 4) * 100) + "%.")
