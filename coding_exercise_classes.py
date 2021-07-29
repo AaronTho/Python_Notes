@@ -2,15 +2,15 @@
 class Garage:
     def __init__(self, size, cars):
         self.size = size
-        self.cars = ["Ram", "Model 3"]
+        self.cars = cars
 
     def open_door(self):
         return "The door opens"
 
 
-home = Garage(2)
-# End of starter code
+home = Garage(2, ["Ram", "Model 3"])
+home.cars = []
 
-# Setter goes here
+get_cars = home.cars
 
-get_cars =  # Getter goes here
+print(vars(home))
