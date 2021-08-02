@@ -1,4 +1,3 @@
-# Starter code
 class Garage:
     def __init__(self, size, cars):
         self.size = size
