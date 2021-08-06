@@ -1,24 +1,25 @@
-class Lineup:
+class InfinteLinup:
     def __init__(self, players):
         self.players = players
-        self.last_player_index = (len(self.players) - 1)
 
-    def __iter__(self):
-        self.n = 0
-        return self
+    def lineup(self):
+        lineup_max = len(self.players)
+        idx = 0
 
-    def get_player(self, n):
-        return self.players[n]
+        while True:
+            if idx < lineup_max:
+                yield self.players[idx]
+            else:
+                idx = 0
+                yield self.players[idx]
 
-    def __next__(self):
-        if self.n < self.last_player_index:
-            player = self.get_player(self.n)
-            self.n += 1
-            return player
-        elif self.n == self.last_player_index:
-            player = self.get_player(self.n)
-            self.n = 0
-            return player
+            idx += 1
+
+    def __repr__(self):
+        return f'<InfinteLinup({self.players})'
+
+    def __srt__(self):
+        return f'<InfineteLineup with the players: {self.players}'
 
 
 astros = [
@@ -33,24 +34,24 @@ astros = [
     'Tucker'
 ]
 
-astros_lineup = Lineup(astros)
-process = iter(astros_lineup)
+full_linup = InfinteLinup(astros)
+astros_lineup = full_linup.lineup()
 
-print(next(process))
-print(next(process))
-print(next(process))
-print(next(process))
-print(next(process))
-print(next(process))
-print(next(process))
-print(next(process))
-print(next(process))
-print(next(process))
-print(next(process))
-print(next(process))
-print(next(process))
-print(next(process))
-print(next(process))
-print(next(process))
-print(next(process))
-print(next(process))
+print(next(astros_lineup))
+print(next(astros_lineup))
+print(next(astros_lineup))
+print(next(astros_lineup))
+print(next(astros_lineup))
+print(next(astros_lineup))
+print(next(astros_lineup))
+print(next(astros_lineup))
+print(next(astros_lineup))
+print(next(astros_lineup))
+print(next(astros_lineup))
+print(next(astros_lineup))
+print(next(astros_lineup))
+print(next(astros_lineup))
+print(next(astros_lineup))
+
+print(repr(astros_lineup))
+print(str(astros_lineup))
