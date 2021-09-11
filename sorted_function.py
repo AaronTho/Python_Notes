@@ -16,3 +16,5 @@ sale_prices.sort()
 sorted_list = sorted(sale_prices)
 sorted_list = sorted(sale_prices, reverse=True)
 print(sorted_list)
+
+# Then review this 100 times or you'll never rememnber it
